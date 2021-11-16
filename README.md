@@ -21,4 +21,4 @@ WHEN I refresh the page
 THEN the saved events persist
 
 ## Mock-up
-![Scheduler Mock-up]()
+![Scheduler Mock-up](https://github.com/collin-beisel-tm/build-a-day/blob/main/assets/images/05-third-party-apis-homework-demo.gif)

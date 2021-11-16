@@ -18,21 +18,68 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <title>Build-A-Day</title>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
+      <h1 class="display-3">Build-A-Day</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDay" class="lead">This will display the current time when JS is added</p>
     </header>
-    <div class="container">
+    <div class="container work-day col-10">
       <!-- Timeblocks go here -->
+      <div class="row text-center d-flex justify-content-center time-block ">
+        <p class="col-1 hour">9 AM</p>
+        <textarea name="" id="9-slot" class="col-8 description" cols="30" rows="10"></textarea>
+        <button class="col-1 saveBtn">Save Button</button>
+      </div>
+      <div class="row text-center d-flex justify-content-center time-block">
+        <p class="col-1 hour">10 AM</p>
+        <textarea name="" id="9-slot" class="col-8 description" cols="30" rows="10"></textarea>
+        <button class="col-1 saveBtn">Save Button</button>
+      </div>
+      <div class="row text-center d-flex justify-content-center time-block">
+        <p class="col-1 hour">11 AM</p>
+        <textarea name="" id="9-slot" class="col-8 description" cols="30" rows="10"></textarea>
+        <button class="col-1 saveBtn">Save Button</button>
+      </div>
+      <div class="row text-center d-flex justify-content-center time-block">
+        <p class="col-1 hour">12 PM</p>
+        <textarea name="" id="9-slot" class="col-8 description" cols="30" rows="10"></textarea>
+        <button class="col-1 saveBtn">Save Button</button>
+      </div>
+      <div class="row text-center d-flex justify-content-center time-block">
+        <p class="col-1 hour">1 PM</p>
+        <textarea name="" id="9-slot" class="col-8 description" cols="30" rows="10"></textarea>
+        <button class="col-1 saveBtn">Save Button</button>
+      </div>
+      <div class="row text-center d-flex justify-content-center time-block">
+        <p class="col-1 hour">2 PM</p>
+        <textarea name="" id="9-slot" class="col-8 description" cols="30" rows="10"></textarea>
+        <button class="col-1 saveBtn">Save Button</button>
+      </div>
+      <div class="row text-center d-flex justify-content-center time-block">
+        <p class="col-1 hour">3 PM</p>
+        <textarea name="" id="9-slot" class="col-8 description" cols="30" rows="10"></textarea>
+        <button class="col-1 saveBtn">Save Button</button>
+      </div>
+      <div class="row text-center d-flex justify-content-center time-block">
+        <p class="col-1 hour">4 PM</p>
+        <textarea name="" id="9-slot" class="col-8 description" cols="30" rows="10"></textarea>
+        <button class="col-1 saveBtn">Save Button</button>
+      </div>
+      <div class="row text-center d-flex justify-content-center time-block">
+        <p class="col-1 hour">5 PM</p>
+        <textarea name="" id="9-slot" class="col-8 description" cols="30" rows="10"></textarea>
+        <button class="col-1 saveBtn">Save Button</button>
+      </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
