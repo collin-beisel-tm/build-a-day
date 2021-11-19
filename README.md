@@ -1,5 +1,5 @@
 # Build A Day Workday Scheduler
-
+![Scheduler Screenshot](https://github.com/collin-beisel-tm/build-a-day/blob/main/assets/images/app-screenshot)
 ## User Story
 AS AN employee with a busy schedule
 I WANT to add important events to a daily planner
@@ -19,6 +19,3 @@ WHEN I click the save button for that time block
 THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
-
-## Mock-up
-![Scheduler Mock-up](https://github.com/collin-beisel-tm/build-a-day/blob/main/assets/images/05-third-party-apis-homework-demo.gif)
