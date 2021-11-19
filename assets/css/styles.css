@@ -13,6 +13,7 @@ body {
     padding: 10px;
   }
   
+  /*updated styles to remove extra padding from header*/
   .jumbotron {
     text-align: center;
     background-color: transparent;
@@ -22,13 +23,13 @@ body {
     padding: 0;
   }
 
+  /*added .container style to address background color bleeding into time slot of each row*/
   .container p {
    padding: 0;
    margin: 0;
   }
   .description{
     white-space: pre-wrap;
-    
   }
   
   .row {
@@ -37,7 +38,6 @@ body {
     margin: 2px;
     text-align: center;
     border-radius: 15px;
-    
   }
   
   .hour {
