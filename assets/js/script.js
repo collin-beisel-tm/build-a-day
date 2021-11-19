@@ -1,27 +1,56 @@
-//global variables
-
-
-//array of time slot objects for working hours
-var timeSlots = {
-    "8 AM": "",
-    "9 AM": "",
-    "10 AM": "",
-    "11 AM": "",
-    "12 PM": "",
-    "1 PM": "",
-    "2 PM": "",
-    "3 PM": "",
-    "4 PM": "",
-    "5 PM": "",
-  };
-
 //document.ready function
+$(document).ready(function() {
+   //add event listener for save button click on a given time slot and call text storage function
+    $(".saveBtn").on("click", function() {
+      // fetch sibling values
+      var description = $(this).siblings(".description").val();
+      var time = $(this).parent().attr("id");
+  
+      // save description to local storage assosiated with the time slot
+      localStorage.setItem(time, description);
+    });
+
+function timeCheck() {
+    // get current time
+    var currentTime = luxon.DateTime.now().hour.toLocaleString();
+
+    // loop over each row and check if the row is past present or future and apply proper css class for color
+    $(".row").each(function() {
+      var selectedHour = parseInt($(this).attr("id").split("-")[1]);
+
+      if (selectedHour < currentTime) {
+        $(this).addClass("past");
+      } 
+      else if (selectedHour == currentTime) {
+        $(this).removeClass("past");
+        $(this).addClass("present");
+      } 
+      else {
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+        $(this).addClass("future");
+      }
+    });
+  }
+
+  timeCheck();
+
+  var interval = setInterval(timeCheck, 30000);
+
+  // calls data from a given time slot in local storage
+
+  $("#time-9 .description").val(localStorage.getItem("time-9"));
+  $("#time-10 .description").val(localStorage.getItem("time-10"));
+  $("#time-11 .description").val(localStorage.getItem("time-11"));
+  $("#time-12 .description").val(localStorage.getItem("time-12"));
+  $("#time-13 .description").val(localStorage.getItem("time-13"));
+  $("#time-14 .description").val(localStorage.getItem("time-14"));
+  $("#time-15 .description").val(localStorage.getItem("time-15"));
+  $("#time-16 .description").val(localStorage.getItem("time-16"));
+  $("#time-17 .description").val(localStorage.getItem("time-17"));
 
 
-// function that calls a luxon framework to display current day and time using the "currentDay" ID
-var currentDT = luxon.DateTime.now().toLocaleString(luxon.DateTime.DATE_MED_WITH_WEEKDAY);
-$("#currentDay").text(currentDT)
-
-// function that saves text data for a given time slot to local storage
-
-//add event listener for save button click on a given time slot and call text storage function
+    // function that calls a luxon framework to display current day and time using the "currentDay" ID
+    var currentDT = luxon.DateTime.now().toLocaleString(luxon.DateTime.DATE_MED_WITH_WEEKDAY);
+    $("#currentDay").text(currentDT)
+});

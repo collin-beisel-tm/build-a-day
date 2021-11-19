@@ -23,13 +23,16 @@ body {
 
   .description{
     white-space: pre-wrap;
-    background-color: #d3d3d3;
+    
   }
   
   .row {
     white-space: pre-wrap;
     border-top: 1px solid white;
     margin: 2px;
+    text-align: center;
+    border-radius: 15px;
+    
   }
   
   .hour {
