@@ -29,7 +29,7 @@
 - No installation is required to use this web application. Simply navigate to the url in your favorite web browser (not compatible with Internet Explorer).
 
 ## How to use this application
-- Navigate to https://collin-beisel-tm.github.io/password-generator/
+- Navigate to https://collin-beisel-tm.github.io/build-a-day/
 - enter a task in the desired time slot
 - click the blue save button 
 - rinse and repeat for as many time slots as you'd like
